@@ -24,11 +24,11 @@ function App() {
         <Route path="/app" element={<AppLayout />}>
           <Route index element={<Navigate replace to="cities" />} />
 
-          <Route path="cities" element={ <CityList cities={cities} loading={loading} error={error} /> } />
+          <Route path="cities" element={ <CityList />} />
           <Route path="form" element={<Form />} />
           <Route path="cities/:cityId" element={<City />} />
 
-          <Route path="countries" element={ <CountryList countries={countries} loading={loading} error={error} /> } />
+          <Route path="countries" element={ <CountryList  /> } />
        </Route>
 
         <Route path="*" element={<PageNotFound />} />

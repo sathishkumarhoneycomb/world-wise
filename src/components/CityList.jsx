@@ -1,8 +1,11 @@
 import styles from "./CityList.module.css";
 import CityItem from "./CityItem.jsx";
 import Message from "./Message.jsx";
+import { useContext } from "react";
+import { useCities } from "../context/CitiesContext.jsx";
 
-function CityList({ cities, loading, error }) {
+function CityList() {
+  const { cities, loading, error }  = useCities();
   if (cities.length == 0) {
     return (
       <Message message="Add your first city by clicking on a city on the map!" />

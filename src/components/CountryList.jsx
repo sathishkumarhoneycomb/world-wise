@@ -1,8 +1,10 @@
 import styles from "./CountryList.module.css";
 
 import CountryItem from "./CountryItem";
+import { useCities } from "../context/CitiesContext";
 
-function CountryList({ countries, loading, error }) {
+function CountryList() {
+  const { countries, loading, error} = useCities();
   return (
     <>
       <div className={styles.countryList}>
