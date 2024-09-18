@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useCities } from "../context/CitiesContext";
 import BackButton from "./ButtonBack";
 import styles from "./City.module.css";
@@ -24,6 +25,10 @@ function City() {
   const {getCity, currentCity } = useCities();
 
   const { cityName, emoji, date, notes } = currentCity;
+
+  useEffect(() => {
+      getCity(cityId)
+  },[cityId])
 
   return (
     <div className={styles.city}>
