@@ -4,6 +4,7 @@ import BackButton from "./ButtonBack";
 import styles from "./City.module.css";
 
 import { useParams, useSearchParams } from "react-router-dom";
+import UseUrlQueryParams from "../hook/useUrlQueryParams";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -16,10 +17,11 @@ const formatDate = (date) =>
 function City() {
   // use params
   const { cityId } = useParams();
-  const [searchParams, setSearchParams] = useSearchParams([]);
+  // const [searchParams, setSearchParams] = useSearchParams([]);
 
-  const lat = searchParams.get("lat");
-  const lng = searchParams.get("lng");
+  // const lat = searchParams.get("lat");
+  // const lng = searchParams.get("lng");
+  const [lat,lng ] = UseUrlQueryParams();
 
   // get the current city 
   const {getCity, currentCity } = useCities();
@@ -27,8 +29,8 @@ function City() {
   const { cityName, emoji, date, notes } = currentCity;
 
   useEffect(() => {
-      getCity(cityId)
-  },[cityId])
+      getCity(cityId);
+  },[cityId, getCity])
 
   return (
     <div className={styles.city}>

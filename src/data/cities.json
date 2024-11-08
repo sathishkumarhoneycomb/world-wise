@@ -1,64 +1,52 @@
 {
-    "cities": [
-        {
-            "cityName": "Lisbon",
-            "country": "Portugal",
-            "emoji": "🇵🇹",
-            "date": "2027-10-31T15:59:59.138Z",
-            "notes": "My favorite city so far!",
-            "position": {
-                "lat": 38.727881642324164,
-                "lng": -9.140900099907554
-            },
-            "id": 73930385
-        },
-        {
-            "cityName": "Madrid",
-            "country": "Spain",
-            "emoji": "🇪🇸",
-            "date": "2027-07-15T08:22:53.976Z",
-            "notes": "",
-            "position": {
-                "lat": 40.46635901755316,
-                "lng": -3.7133789062500004
-            },
-            "id": 17806751
-        },
-        {
-            "cityName": "Berlin",
-            "country": "Germany",
-            "emoji": "🇩🇪",
-            "date": "2027-02-12T09:24:11.863Z",
-            "notes": "Amazing 😃",
-            "position": {
-                "lat": 52.53586782505711,
-                "lng": 13.376933665713324
-            },
-            "id": 98443197
-        },
-        {
-            "cityName": "Berlin",
-            "country": "Germany",
-            "emoji": "🇩🇪",
-            "date": "2027-02-12T09:24:11.863Z",
-            "notes": "Amazing 😃",
-            "position": {
-                "lat": 52.53586782505711,
-                "lng": 13.376933665713324
-            },
-            "id": 984431977
-        },
-        {
-            "cityName": "Berlin",
-            "country": "Germany",
-            "emoji": "🇩🇪",
-            "date": "2027-02-12T09:24:11.863Z",
-            "notes": "Amazing 😃",
-            "position": {
-                "lat": 52.53586782505711,
-                "lng": 13.376933665713324
-            },
-            "id": 984431978
-        }
-    ]
+  "cities": [
+    {
+      "id": "c4e8",
+      "cityName": "London",
+      "country": "GB",
+      "emoji": "🇬🇧",
+      "date": "Thursday, November 7, 2024",
+      "notes": "dfsdf",
+      "position": {
+        "lat": "51.50084747729553",
+        "lng": "-0.08514404296875001"
+      }
+    },
+    {
+      "id": "b88a",
+      "cityName": "London",
+      "country": "GB",
+      "emoji": "🇬🇧",
+      "date": "Thursday, November 7, 2024",
+      "notes": "sdfsdf",
+      "position": {
+        "lat": "51.493047205227924",
+        "lng": "-0.10660171508789064"
+      }
+    },
+    {
+      "id": "0bd2",
+      "cityName": "Borough of Swale",
+      "country": "GB",
+      "emoji": "🇬🇧",
+      "date": "Thursday, November 7, 2024",
+      "notes": "rest",
+      "position": {
+        "lat": "51.31001339554934",
+        "lng": "0.8941134825912258"
+      }
+    },
+    {
+      "id": "50db",
+      "cityName": "Коропська селищна громада",
+      "country": "UA",
+      "emoji": "🇺🇦",
+      "date": "Thursday, November 7, 2024",
+      "notes": "test",
+      "position": {
+        "lat": "51.56341232867588",
+        "lng": "32.86482716752167"
+      }
+    }
+  ]
 }
